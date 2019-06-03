@@ -105,7 +105,7 @@
           </v-flex>
           <v-flex data-scroll xs12 sm6 md4 class="mx-4">
             <h3 class="mb-1">시내버스 이용시</h3>
-            <p style="font-size:16px;">'KT 강남지사' 하차</p>
+            <p style="font-size:16px;">'KT 강남지사' 혹은 '한국기술센터, 상록회관' 하차</p>
           </v-flex>
           <v-flex data-scroll xs12 sm6 md4 class="mx-4">
             <h3 class="mb-1">고속버스 이용시</h3>
@@ -118,10 +118,10 @@
           <v-flex data-scroll xs12 sm6 md4 class="mx-4">
             <h3>기차 이용시</h3>
             <p style="font-size:16px;">
-              SRT 수서역 하차
+              SRT '수서역' 하차
               <br>→ 지하철 분당선으로 환승 후
               <br>
-              <span class="ml-4">선릉역 하차</span>
+              <span class="ml-4">'선릉역' 하차</span>
             </p>
           </v-flex>
           <v-flex data-scroll xs12 sm6 md4 class="mx-4">
@@ -250,7 +250,7 @@
           </v-flex>
         </v-layout>
       </v-container>
-      <v-container class="pt-5 py-1 grey lighten-4">
+      <v-container fluid class="pt-5 py-1 grey lighten-4">
         <v-divider></v-divider>
         <v-layout row wrap>
           <v-flex xs12 class="px-1 text-xs-right">© TaewooKim</v-flex>
@@ -381,10 +381,10 @@ var Sakura = function(t, e) {
       )),
       (o.style.width = "".concat(s, "px")),
       u(o, "AnimationEnd", function() {
-        h(o) || o.remove();
+        h(o) || o.parentNode.removeChild(o);
       }),
       u(o, "AnimationIteration", function() {
-        h(o) || o.remove();
+        h(o) || o.parentNode.removeChild(o);
       }),
       c.el.appendChild(o);
   }),
@@ -541,7 +541,7 @@ export default {
       //
     };
   },
-  created() {
+  created: function() {
     jarallaxVideo();
     jarallaxElement();
 
@@ -617,7 +617,7 @@ export default {
 } */
 @font-face {
   font-family: "Inklipquid";
-  src: url("~@/assets/fonts/inklipquid.ttf") format("truetype");
+  src: url("~@/assets/fonts/THEFACESHOP.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
