@@ -2,7 +2,7 @@ import firebase from "firebase/app";
 import firestore from "firebase/firestore";
 
 // Initialize Firebase
-var config = {
+var firebaseConfig = {
   apiKey: "AIzaSyAs19mi2jc9Jx1AfbbStOQTY15OFBI1H64",
   authDomain: "honeymini.firebaseapp.com",
   databaseURL: "https://honeymini.firebaseio.com",
@@ -11,6 +11,6 @@ var config = {
   messagingSenderId: "828510582709",
   appId: "1:828510582709:web:ebbcf6a6839180d9"
 };
-const firebaseApp = firebase.initializeApp(config);
+const firebaseApp = firebase.initializeApp(firebaseConfig);
 
 export default firebaseApp.firestore();

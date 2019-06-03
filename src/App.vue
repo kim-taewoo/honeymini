@@ -605,7 +605,7 @@ export default {
 } */
 @font-face {
   font-family: "GyeonggiBatang";
-  src: url("~@/assets/fonts/gyeonggiR.woff") format("woff");
+  src: url("~@/assets/fonts/gyeonggiRnew.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
