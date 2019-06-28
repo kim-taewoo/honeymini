@@ -94,14 +94,15 @@
           </v-flex>
           <v-flex data-scroll xs12 sm6 md4 class="mx-4">
             <h3 class="mb-1">지하철 이용시</h3>
-            <p style="font-size:16px;">
-              2호선 / 분당선 '선릉역' 하차
-              <br>5번 출구 나와 도보 5분
-              <br>
-              <small>
-                <strong>* 혹은 5번 출구 셔틀버스 이용</strong>
-              </small>
-            </p>
+            <div style="font-size:16px;">
+              <p class="mb-0">2호선 / 분당선 '선릉역' 하차</p>
+              <p class="mb-0">5번 출구 나와 도보 5분</p>
+              <p class>
+                <small>
+                  <strong>* 혹은 5번 출구 셔틀버스 이용</strong>
+                </small>
+              </p>
+            </div>
           </v-flex>
           <v-flex data-scroll xs12 sm6 md4 class="mx-4">
             <h3 class="mb-1">시내버스 이용시</h3>
@@ -109,20 +110,21 @@
           </v-flex>
           <v-flex data-scroll xs12 sm6 md4 class="mx-4">
             <h3 class="mb-1">고속버스 이용시</h3>
-            <p style="font-size:16px;">
-              '강남고속터미널' 하차 →
-              <br>지하철 3호선 타고 '교대역' 하차
-              <br>→ 지하철 2호선 환승, '선릉역' 하차
-            </p>
+            <div style="font-size:16px;" class>
+              <p class="mb-0">'강남고속터미널' 하차</p>
+              <p class="mb-0">→ 지하철 3호선 타고 '교대역' 하차</p>
+              <p class="">→ 지하철 2호선 환승, '선릉역' 하차</p>
+            </div>
           </v-flex>
           <v-flex data-scroll xs12 sm6 md4 class="mx-4">
             <h3>기차 이용시</h3>
-            <p style="font-size:16px;">
-              SRT '수서역' 하차
-              <br>→ 지하철 분당선으로 환승 후
-              <br>
-              <span class="ml-4">'선릉역' 하차</span>
-            </p>
+            <div style="font-size:16px;">
+              <p class="mb-0">SRT '수서역' 하차</p>
+              <p class="mb-0">→ 지하철 분당선으로 환승 후</p>
+              <p class="">
+                <span class="ml-4">'선릉역' 하차</span>
+              </p>
+            </div>
           </v-flex>
           <v-flex data-scroll xs12 sm6 md4 class="mx-4">
             <h3 class="mb-1">귀가시</h3>
@@ -198,7 +200,7 @@
                   <v-flex xs6 class="pt-0 pl-2">
                     <v-text-field
                       v-model="commentpassword"
-                      label="비밀번호(수정용)"
+                      label="비밀번호(삭제용)"
                       type="password"
                       single-line
                       hide-details
